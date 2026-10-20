@@ -22,7 +22,7 @@ load_dotenv()
 
 # Configuration
 TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
-VLLM_BASE_URL = "http://192.168.8.90:42069/v1"
+VLLM_BASE_URL = "http://vllm-03.internal:42069/v1"
 SCRAPING_TAG_PREFIX = "### Scraping updated"
 
 # Initialize clients

@@ -16,7 +16,7 @@ A Python script that automatically processes markdown notes by scraping URLs and
 
 - Python 3.8+
 - Tavily API key (get one at [tavily.com](https://tavily.com))
-- Local vLLM server running at `http://192.168.8.90:42069/v1`
+- Local vLLM server running at `http://vllm-03.internal:42069/v1`
 
 ## Installation
 
@@ -84,7 +84,7 @@ Notes containing `### Scraping updated` are automatically skipped to avoid dupli
 
 You can modify these settings in `note_processor.py`:
 
-- `VLLM_BASE_URL`: URL of your local vLLM server (default: `http://192.168.8.90:42069/v1`)
+- `VLLM_BASE_URL`: URL of your local vLLM server (default: `http://vllm-03.internal:42069/v1`)
 - `SCRAPING_TAG_PREFIX`: Tag used to mark processed notes (default: `### Scraping updated`)
 
 ## Error Handling
